@@ -1,0 +1,105 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C/C++: g++ build all",
+			"type": "shell",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"${workspaceFolder}/src/*.cpp",
+				"-o",
+				"${workspaceFolder}/${workspaceFolderBasename}.out"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "C/C++: g++ build active file",
+			"type": "shell",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++17",
+				"-g", 
+				"${file}", 
+				"-o", 
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "build"
+		},
+		{
+			"label": "C/C++: Windows Mingw64 build all",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"${workspaceFolder}\\src\\*.cpp",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"problemMatcher": ["$gcc"]
+		},
+		{
+			"label": "C/C++: Windows Mingw64 build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"problemMatcher": ["$gcc"]
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++ build all",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+        		"-stdlib=libc++",
+				"-g",
+				"${workspaceFolder}/src/*.cpp",
+				"-o",
+				"${workspaceFolder}/${workspaceFolderBasename}.out"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++ build active file",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+        		"-stdlib=libc++",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang++"
+		}
+	],
+	"problemMatchers": ["$gcc"]
+}
