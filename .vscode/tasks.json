@@ -7,6 +7,7 @@
 			"command": "/usr/bin/g++",
 			"args": [
 				"-std=c++17",
+				"-pthread",
 				"-g",
 				"${workspaceFolder}/src/*.cpp",
 				"-o",
@@ -20,6 +21,20 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"label": "C/C++: g++ run all",
+			"type": "shell",
+			"command": "${workspaceFolder}/${workspaceFolderBasename}.out",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"dependsOn": ["C/C++: g++ build all"]
 		},
 		{
 			"label": "C/C++: g++ build active file",
