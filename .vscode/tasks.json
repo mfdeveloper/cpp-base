@@ -54,6 +54,17 @@
 			"group": "build"
 		},
 		{
+			"label": "C/C++: g++ run active file",
+			"type": "shell",
+			"command": "${fileDirname}/${fileBasenameNoExtension}",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "test",
+			"dependsOn": ["C/C++: g++ build active file"]
+		},
+		{
 			"label": "C/C++: Windows Mingw64 build all",
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
