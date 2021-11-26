@@ -125,6 +125,42 @@
 			"problemMatcher": ["$gcc"],
 			"group": "build",
 			"detail": "compiler: /usr/bin/clang++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "CMake: build all",
+			"command": "${command:cmake.build}",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "build",
+			"detail": "compiler: /usr/bin/cmake"
+		},
+		{
+			"type": "cppbuild",
+			"label": "CMake: run all",
+			"command": "${command:cmake.launchTarget}",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "test",
+			"detail": "compiler: /usr/bin/cmake"
+		},
+		{
+			"type": "cppbuild",
+			"label": "CMake: unit tests",
+			"command": "${command:cmake.ctest}",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "test",
+			"detail": "compiler: /usr/bin/cmake"
 		}
 	],
 	"problemMatchers": ["$gcc"]

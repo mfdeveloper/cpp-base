@@ -1,7 +1,8 @@
 {
     "recommendations": [
         "ms-vscode.cpptools",
+        "twxs.cmake",
         "ms-vscode.cmake-tools",
-        "twxs.cmake"
+        "matepek.vscode-catch2-test-adapter"
     ]
 }
