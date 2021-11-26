@@ -152,7 +152,7 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "CMake: unit tests",
+			"label": "CMake: run tests",
 			"command": "${command:cmake.ctest}",
 			"args": [],
 			"options": {
