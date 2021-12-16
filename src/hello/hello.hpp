@@ -1,24 +1,21 @@
-#ifndef HELLO_HPP
-#define HELLO_HPP
+#pragma once
 
 #include <iostream>
 #include <vector>
 #include <string>
 
-using namespace std;
+std::string hello()
+{
 
-string hello() {
+    std::vector<std::string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+    std::string result;
 
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
-    string result;
-
-    for (const string& word : msg)
+    for (const std::string& word : msg)
     {
         result += word + " ";
-        cout << result;
+        std::cout << result;
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return result;
 }
-#endif

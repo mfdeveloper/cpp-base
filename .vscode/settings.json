@@ -72,7 +72,17 @@
         "fstream": "cpp",
         "condition_variable": "cpp",
         "future": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "variant": "cpp",
+        "any": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "iomanip": "cpp",
+        "cinttypes": "cpp",
+        "*.def": "cpp"
     },
     "C_Cpp.autocompleteAddParentheses": true,
     "cmake.configureOnOpen": true,
@@ -97,5 +107,6 @@
                 }
             }
         ]
-    }
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }

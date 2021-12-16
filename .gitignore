@@ -11,6 +11,11 @@
 # Prerequisites
 *.d
 
+# ----- Unit test -----
+#
+# Prerequisites
+[tT]esting/
+
 # Compiled Object files
 *.slo
 *.lo
